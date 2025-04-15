@@ -39,8 +39,8 @@ $translations = [
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="detail-box">
-                      <div>
+                    <div class="detail-box d-flex align-items-center justify-content-center flex-column">
+                      <div style="width: 300px;">
                         <h1>
                         <?= $translations['BRAND'][$lang] ?>
                         <br>
@@ -49,70 +49,8 @@ $translations = [
 
                           </span>
                         </h1>
-                        <p>
+                        <p style="font-size: 1.5rem;">
                         <?= $translations['DESCRIPCION'][$lang] ?>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="slider_item-box layout_padding2">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="img-box">
-                      <div>
-                        <img src="assets/img/slider-img.jpg" alt="" class="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="detail-box">
-                      <div>
-                        <h1>
-                          Coningenio <br>
-                          <span>
-                            Consultora
-                          </span>
-                        </h1>
-                        <p>
-                        Materializamos tus proyectos con ideas y soluciones innovadoras.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item ">
-            <div class="slider_item-box layout_padding2">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="img-box">
-                      <div>
-                        <img src="assets/img/slider-img.jpg" alt="" class="" />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="detail-box">
-                      <div>
-                        <h1>
-                          Heustonn <br>
-                          Maintenance <br>
-                          <span>
-                            Service
-                          </span>
-                        </h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore
                         </p>
                       </div>
                     </div>
@@ -128,7 +66,7 @@ $translations = [
         <div class="slider_nav-box">
           <div class="btn-box">
             <a href="">
-              Read More
+              Ver más
             </a>
             <hr>
           </div>
