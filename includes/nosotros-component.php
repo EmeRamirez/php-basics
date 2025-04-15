@@ -66,7 +66,18 @@ $body = substr($response, $headerSize);
 
 // Modo de depuración (cambiar a false en producción)
 $debugMode = true;
+$lang = $_GET['lang'] ?? 'esp';
 
+$translations = [
+    'TITLE' => [
+      'esp' => 'SOBRE NOSOTROS',
+      'eng' => 'ABOUT US'
+    ],
+  'MORE' => [
+    'esp' => 'Ver más',
+    'eng' => 'See more'
+  ]
+  ];
 if ($err) {
     echo '<div class="alert alert-danger">Error en la conexión: ' . htmlspecialchars($err) . '</div>';
 } else {
@@ -118,7 +129,7 @@ if ($err) {
     <div class="custom_heading-container flex-column" >
 
         <h3 class="pb-3">
-            SOBRE NOSOTROS
+        <?= $translations['TITLE'][$lang] ?>
         </h3>
 
     </div>
@@ -128,16 +139,16 @@ if ($err) {
             <img src="assets/img/animacs.jpg" alt="">
         </div>
 
-        <?php if (isset($aboutUsData[0]['titulo']['esp'])): ?>
+        <?php if (isset($aboutUsData[0]['titulo'][$lang])): ?>
             
         <div class="pt-5 flex-column">
 
             <h3 class="pb-3">
-                <b><?php echo $aboutUsData[0]['titulo']['esp']; ?></b>
+                <b><?php echo $aboutUsData[0]['titulo'][$lang]; ?></b>
             </h3>
 
             <p class="pt-2">
-                <?php echo $aboutUsData[0]['descripcion']['esp']; ?>
+                <?php echo $aboutUsData[0]['descripcion'][$lang]; ?>
             </p>
 
         </div>
@@ -153,7 +164,7 @@ if ($err) {
     <div class="about-container mt-5">
 
 
-            <?php if (isset($aboutUsData[1]['titulo']['esp'])): ?>
+            <?php if (isset($aboutUsData[1]['titulo'][$lang])): ?>
 
             <div class="card-about custom_heading-container flex-column" style="max-width: 400px;">
 
@@ -162,11 +173,11 @@ if ($err) {
                 </div>
             
                 <h3 class="title-card-about">
-                    <?php echo $aboutUsData[1]['titulo']['esp']; ?>
+                    <?php echo $aboutUsData[1]['titulo'][$lang]; ?>
                 </h3>
 
                 <p class="pt-3 pb-3">
-                    <?php echo $aboutUsData[1]['descripcion']['esp']; ?>
+                    <?php echo $aboutUsData[1]['descripcion'][$lang]; ?>
                 </p>
             
             </div>
@@ -178,11 +189,11 @@ if ($err) {
                 </div>
             
                 <h3 class="title-card-about">
-                    <?php echo $aboutUsData[2]['titulo']['esp']; ?>
+                    <?php echo $aboutUsData[2]['titulo'][$lang]; ?>
                 </h3>
 
                 <p class="pt-3">
-                    <?php echo $aboutUsData[2]['descripcion']['esp']; ?>
+                    <?php echo $aboutUsData[2]['descripcion'][$lang]; ?>
                 </p>
             
             </div>
@@ -222,7 +233,7 @@ if ($err) {
       <div class="container pt-5">
         <div class="btn-box">
           <a href="">
-            Ver más
+          <?= $translations['MORE'][$lang] ?>
           </a>
           <hr>
         </div>

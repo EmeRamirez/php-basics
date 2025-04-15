@@ -29,9 +29,37 @@
 </head>
 
 <body>
+<?php
+
+$lang = $_GET['lang'] ?? 'esp';
+
+$translations = [
+  'HOME' => [
+    'esp' => 'Inicio',
+    'eng' => 'Home'
+  ],
+  'US' => [
+    'esp' => 'Nosotros',
+    'eng' => 'About us'
+  ],
+'SERVICES' => [
+  'esp' => 'Servicios',
+  'eng' => 'Services'
+],
+'CONTACT' => [
+  'esp' => 'Contáctanos',
+  'eng' => 'Contact us'
+]
+
+];
+?>
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
+    <div class="lang-toggle">
+      <a href="?lang=esp"> 🇪🇸</a> |
+      <a href="?lang=eng">🇬🇧</a>
+    </div>
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
@@ -49,16 +77,20 @@
             <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav">
                 <li class="nav-item active" >
-                  <a class="nav-link" href="index.php">Inicio</a>
+                  <a class="nav-link" href="index.php"><?= $translations['HOME'][$lang] ?>
+                  </a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="nosotros.php"> Nosotros </a>
+                  <a class="nav-link" href="nosotros.php"><?= $translations['US'][$lang] ?>
+                  </a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="servicios.php"> Servicios </a>
+                  <a class="nav-link" href="servicios.php"><?= $translations['SERVICES'][$lang] ?>
+                  </a>
                 </li>
                 <li class="nav-item" >
-                  <a class="nav-link" href="contacto.php">Contáctanos</a>
+                  <a class="nav-link" href="contacto.php"><?= $translations['CONTACT'][$lang] ?>
+                  </a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Login</a>
