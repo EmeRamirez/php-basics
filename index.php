@@ -21,15 +21,13 @@ include 'includes/header.php';
                     <div class="detail-box">
                       <div>
                         <h1>
-                          Heustonn <br>
-                          Maintenance <br>
+                          Coningenio <br>
                           <span>
-                            Service
+                            Consultora
                           </span>
                         </h1>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore
+                          Materializamos tus proyectos con ideas y soluciones innovadoras.
                         </p>
                       </div>
                     </div>
@@ -53,15 +51,13 @@ include 'includes/header.php';
                     <div class="detail-box">
                       <div>
                         <h1>
-                          Heustonn <br>
-                          Maintenance <br>
+                          Coningenio <br>
                           <span>
-                            Service
+                            Consultora
                           </span>
                         </h1>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                          sed do eiusmod tempor incididunt ut labore
+                        Materializamos tus proyectos con ideas y soluciones innovadoras.
                         </p>
                       </div>
                     </div>
@@ -129,34 +125,7 @@ include 'includes/header.php';
   <div class="bg">
 
     <!-- about section -->
-    <section class="about_section layout_padding">
-      <div class="container">
-        <div class="custom_heading-container">
-          <h3 class=" ">
-            ABOUT OUR COMPANY
-          </h3>
-        </div>
-        <p class="layout_padding2-top">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        </p>
-        <div class="img-box layout_padding2">
-          <img src="assets/img/about-img.jpg" alt="">
-        </div>
-        <p class="layout_padding2-bottom">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        </p>
-      </div>
-      <div class="container">
-        <div class="btn-box">
-          <a href="">
-            Read More
-          </a>
-          <hr>
-        </div>
-      </div>
-    </section>
+    
 
 
     <!-- end about section -->

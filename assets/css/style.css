@@ -38,7 +38,7 @@ body {
 }
 
 .custom_heading-container h3 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   color: #000000;
   position: relative;

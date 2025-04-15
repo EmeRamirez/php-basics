@@ -23,10 +23,9 @@
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
   <link href="assets/css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="assets/css/responsive.css" rel="stylesheet" />
+  <link href="assets/css/nosotros.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -48,17 +47,17 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.php">Inicio <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav">
+                <li class="nav-item active" >
+                  <a class="nav-link" href="index.php">Inicio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="nav-link" href="nosotros.php"> Nosotros </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="nav-link" href="servicios.php"> Servicios </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                   <a class="nav-link" href="contacto.php">Contáctanos</a>
                 </li>
                 <!-- <li class="nav-item">
