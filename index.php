@@ -1,5 +1,26 @@
 <?php 
 include 'includes/header.php';
+$lang = $_GET['lang'] ?? 'esp';
+
+$translations = [
+  'BRAND' => [
+    'esp' => 'Coningenio',
+    'eng' => 'Coningenio'
+  ],
+  'BRAND_SUB' => [
+    'esp' => 'Consultora',
+    'eng' => 'Solutions'
+  ],
+'DESCRIPCION' => [
+  'esp' => 'Materializamos tus proyectos con ideas y soluciones innovadoras.',
+  'eng' => 'We bring your projects to life with innovative ideas and solutions.'
+],
+'MORE' => [
+  'esp' => 'Ver más',
+  'eng' => 'See more'
+]
+
+];
 ?>
 
 
@@ -21,13 +42,15 @@ include 'includes/header.php';
                     <div class="detail-box">
                       <div>
                         <h1>
-                          Coningenio <br>
+                        <?= $translations['BRAND'][$lang] ?>
+                        <br>
                           <span>
-                            Consultora
+                          <?= $translations['BRAND_SUB'][$lang] ?>
+
                           </span>
                         </h1>
                         <p>
-                          Materializamos tus proyectos con ideas y soluciones innovadoras.
+                        <?= $translations['DESCRIPCION'][$lang] ?>
                         </p>
                       </div>
                     </div>
