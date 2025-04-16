@@ -1,4 +1,4 @@
-<section class="container-fluid footer_section">
+<section class="container-fluid footer_section" >
       <p>
         Copyright &copy; 2025 Desarrollo Backend M-50
         <a>IPSS</a>
