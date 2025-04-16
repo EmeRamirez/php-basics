@@ -26,6 +26,8 @@
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/responsive.css" rel="stylesheet" />
   <link href="assets/css/nosotros.css" rel="stylesheet" />
+    <link href="assets/css/contacto.css" rel="stylesheet" />
+
 </head>
 
 <body>
