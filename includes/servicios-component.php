@@ -88,7 +88,7 @@ if ($err) {
         $services = $servicesInfo['data'];  // Array de servicios
       
         ?>
-        <section class="service_section layout_padding-bottom">
+        <section class="service_section layout_padding-bottom" style="margin-bottom: 100px;>
           <div class="container">
             <div class="custom_heading-container">
               <h3 class="">

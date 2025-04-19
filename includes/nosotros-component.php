@@ -124,7 +124,7 @@ if ($err) {
 }
 ?>
 
-<section class="about_section">
+<section class="about_section" style="margin-bottom: 100px;">
 
     <div class="custom_heading-container flex-column" >
 
