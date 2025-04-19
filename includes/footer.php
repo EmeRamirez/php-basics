@@ -14,7 +14,7 @@ $translations = [
     
 <div class="container mt-5">
         <div class="btn-box">
-          <a href="/contacto.php">
+          <a href="contacto.php">
           <?= $translations['MORE'][$lang] ?>
           </a>
           <hr>
