@@ -41,8 +41,8 @@ $translations = [
   'eng' => 'We offer innovative and personalized solutions to help you achieve your goals.'
 ],
 'MORE' => [
-  'esp' => 'Ver más',
-  'eng' => 'See more'
+  'esp' => 'Saber más',
+  'eng' => 'Know more'
 ]
 
 ];
@@ -101,42 +101,31 @@ if ($err) {
             
             <div class="service_container">
               
-              <div id="service-container" class="row">
-                <?php
-                // Mostrar servicios de la API
-                foreach ($services as $service) {
-                    if ($service['activo']) {
-                        // Usamos el título en español (puedes cambiar a inglés si prefieres)
-                        $titulo = $service['titulo'][$lang];
-                        $descripcion = $service['descripcion'][$lang];
-                        $imagen = "assets/img/s-". $service['id'] .".jpg";  // Asegúrate de que las imágenes estén correctamente nombradas
-                ?>
-                  <div class="col-md-3">
-                    <div class="box b-<?php echo $service['id']; ?>">
-                      <div class="img-box">
-                        <img src="<?php echo $imagen; ?>" alt="">
-                      </div>
-                      <div class="detail-box">
-                        <h6>
-                          <?php echo $titulo ; ?>
-                        </h6>
-                        <p>
-                          <?php echo $descripcion; ?>
-                        </p>
-                        <div class="btn-box">
-                          <a href="">
-                          <?= $translations['MORE'][$lang] ?>
-                          </a>
-                          <hr>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <?php
-                    }
-                }
-                ?>
-              </div>
+            <div id="service-container" class="row g-4">
+  <?php
+  foreach ($services as $service) {
+      if ($service['activo']) {
+          $titulo = $service['titulo'][$lang];
+          $descripcion = $service['descripcion'][$lang];
+          $imagen = "assets/img/s-" . $service['id'] . ".jpg";
+  ?>
+<div class="col-12 col-md-6 mb-5 d-flex">
+<div class="card shadow-sm w-100 h-100">
+    <img src="<?php echo $imagen; ?>" class="card-img-top img-fluid" alt="Imagen servicio" style="height: 250px; object-fit: cover;">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title " style="color:#193b75"><?php echo $titulo; ?></h5>
+      <p class="card-text text-muted"><?php echo $descripcion; ?></p>
+    </div>
+  </div>
+</div>
+
+  <?php
+      }
+  }
+  ?>
+</div>
+
+              
             </div>
           </div>
         </section>

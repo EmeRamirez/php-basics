@@ -62,24 +62,6 @@ $translations = [
         </div>
 
       </div>
-      <div class="container">
-        <div class="slider_nav-box">
-          <div class="btn-box">
-            <a href="">
-              Ver más
-            </a>
-            <hr>
-          </div>
-          <div class="custom_carousel-control">
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- end slider section -->
   </div>
