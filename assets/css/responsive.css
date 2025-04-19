@@ -4,14 +4,14 @@
     .custom_nav-container .nav_search-btn {
         display: none;
     }
-
+/* 
     .service_section::before {
         bottom: 45px;
-    }
+    } */
 
-    .service_section .service_container {
+    /* .service_section .service_container {
         padding: 45px 0 125px 0;
-    }
+    } */
 
 
 

@@ -73,10 +73,10 @@ $translations = [
       'esp' => 'SOBRE NOSOTROS',
       'eng' => 'ABOUT US'
     ],
-  'MORE' => [
-    'esp' => 'Ver más',
-    'eng' => 'See more'
-  ]
+    'MORE' => [
+        'esp' => 'Saber más',
+        'eng' => 'Know more'
+      ]
   ];
 if ($err) {
     echo '<div class="alert alert-danger">Error en la conexión: ' . htmlspecialchars($err) . '</div>';
@@ -230,12 +230,4 @@ if ($err) {
 
       </div>
 
-      <div class="container pt-5">
-        <div class="btn-box">
-          <a href="">
-          <?= $translations['MORE'][$lang] ?>
-          </a>
-          <hr>
-        </div>
-      </div>
     </section>
