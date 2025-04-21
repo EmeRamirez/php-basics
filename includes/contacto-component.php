@@ -125,7 +125,7 @@ $translations = [
                             <input class="form-control border" type="text" placeholder="<?= $translations['FORM_PHONE'][$lang] ?>" required>
                         </div>
                         
-                            <select class="form-control border" required>
+                            <select class="form-control border" style="padding: 0;" required>
                                 <option value="Selecciona que servicio necesitas" disabled selected>Selecciona que servicio necesitas</option>
                                 <option value="Cotizar proyecto">Cotizar proyecto</option>
                                 <option value="Soporte post venta">Soporte post venta</option>
